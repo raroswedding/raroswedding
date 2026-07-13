@@ -38,26 +38,17 @@ section{
 =================================================== */
 
 .hero{
-
     height:100vh;
-
-    background:
-    linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)),
-    url("portada.PNG");
-
+    background-image:url("portada.PNG");
     background-size:cover;
     background-position:center;
-
+    background-repeat:no-repeat;
     display:flex;
     justify-content:center;
     align-items:center;
-
     text-align:center;
-
     color:white;
-
     position:relative;
-
 }
 
 .hero::after{
