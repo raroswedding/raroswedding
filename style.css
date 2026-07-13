@@ -1,0 +1,684 @@
+/* ===================================================
+   RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F8F5F1;
+    color:#3A3836;
+    overflow-x:hidden;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding:90px 24px;
+}
+
+.contenedor{
+    width:min(1100px,92%);
+    margin:auto;
+}
+
+/* ===================================================
+   HERO
+=================================================== */
+
+.hero{
+
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)),
+    url("fotos/portada.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+
+    position:relative;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    height:150px;
+
+    background:linear-gradient(transparent,#F8F5F1);
+
+}
+
+.hero-overlay{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.logo{
+
+    font-family:'Cormorant Garamond',serif;
+
+    letter-spacing:10px;
+
+    font-size:20px;
+
+    margin-bottom:35px;
+
+}
+
+.hero h1{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(60px,10vw,110px);
+
+    font-weight:500;
+
+    margin-bottom:25px;
+
+}
+
+.fecha{
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+    opacity:.9;
+
+}
+
+.scroll-indicator{
+
+    margin-top:80px;
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+}
+
+.scroll-indicator::after{
+
+    content:"";
+
+    display:block;
+
+    width:1px;
+
+    height:55px;
+
+    background:white;
+
+    margin:15px auto 0;
+
+    animation:scroll 2s infinite;
+
+}
+
+@keyframes scroll{
+
+    0%{
+        transform:translateY(0);
+        opacity:.2;
+    }
+
+    50%{
+        transform:translateY(10px);
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(0);
+        opacity:.2;
+    }
+
+}
+
+/* ===================================================
+   TITULOS
+=================================================== */
+
+h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:clamp(42px,5vw,68px);
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+/* ===================================================
+   CONTADOR
+=================================================== */
+
+.contador{
+
+    background:#EFE8DD;
+
+}
+
+#countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:25px;
+
+}
+
+#countdown div{
+
+    width:140px;
+
+    height:140px;
+
+    background:white;
+
+    border-radius:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+#countdown span{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:56px;
+
+    color:#B89B68;
+
+}
+
+#countdown small{
+
+    margin-top:8px;
+
+    text-transform:uppercase;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    color:#777;
+
+}
+
+/* ===================================================
+   FRASES
+=================================================== */
+
+.frases{
+
+    background:#F8F5F1;
+
+}
+
+.frase-card{
+
+    max-width:720px;
+
+    margin:30px auto;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
+
+}
+
+.frase-card p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+.gatos-iconos{
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+}
+
+.gatos small{
+
+    display:block;
+
+    margin-top:20px;
+
+    color:#777;
+
+}
+/* ===================================================
+   EL GRAN DÍA
+=================================================== */
+
+.evento{
+
+    background:#EFE8DD;
+
+}
+
+.evento-card{
+
+    background:white;
+
+    max-width:700px;
+
+    margin:25px auto;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.evento-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.evento-card h3{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    color:#70755E;
+
+    margin-bottom:15px;
+
+}
+
+.evento-card p{
+
+    font-size:18px;
+
+    color:#555;
+
+}
+
+
+/* ===================================================
+   RSVP
+=================================================== */
+
+.rsvp{
+
+    background:#F8F5F1;
+
+    text-align:center;
+
+}
+
+.rsvp p{
+
+    max-width:550px;
+
+    margin:0 auto 40px;
+
+    color:#666;
+
+}
+
+.boton-rsvp{
+
+    background:#70755E;
+
+    color:white;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+    font-family:'Poppins',sans-serif;
+
+}
+
+.boton-rsvp:hover{
+
+    background:#5F644F;
+
+    transform:translateY(-3px);
+
+}
+
+
+/* ===================================================
+   FOOTER
+=================================================== */
+
+footer{
+
+    background:#3A3836;
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 25px;
+
+}
+
+.logo-footer{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:42px;
+
+    letter-spacing:10px;
+
+    margin-bottom:25px;
+
+}
+
+footer p{
+
+    max-width:450px;
+
+    margin:auto;
+
+    opacity:.85;
+
+}
+
+
+/* ===================================================
+   MODAL
+=================================================== */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.60);
+
+    backdrop-filter:blur(6px);
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+    z-index:9999;
+
+}
+
+.modal-contenido{
+
+    background:white;
+
+    width:min(650px,95%);
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    border-radius:24px;
+
+    padding:40px;
+
+    position:relative;
+
+    box-shadow:0 30px 80px rgba(0,0,0,.25);
+
+}
+
+.modal h2{
+
+    margin-bottom:30px;
+
+}
+
+.modal label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.modal input,
+.modal select,
+.modal textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+}
+
+.modal textarea{
+
+    resize:vertical;
+
+    min-height:110px;
+
+}
+
+.modal .boton-rsvp{
+
+    width:100%;
+
+    margin-top:35px;
+
+}
+
+.cerrar{
+
+    position:absolute;
+
+    top:18px;
+
+    right:22px;
+
+    background:none;
+
+    border:none;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    color:#777;
+
+}
+
+.cerrar:hover{
+
+    color:black;
+
+}
+
+
+/* ===================================================
+   ANIMACIONES
+=================================================== */
+
+.oculto{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.visible{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ===================================================
+   RESPONSIVE
+=================================================== */
+
+@media(max-width:768px){
+
+    section{
+
+        padding:75px 22px;
+
+    }
+
+    .hero h1{
+
+        font-size:58px;
+
+    }
+
+    .logo{
+
+        font-size:18px;
+
+        letter-spacing:8px;
+
+    }
+
+    .fecha{
+
+        font-size:12px;
+
+    }
+
+    #countdown{
+
+        gap:15px;
+
+    }
+
+    #countdown div{
+
+        width:100px;
+
+        height:100px;
+
+    }
+
+    #countdown span{
+
+        font-size:42px;
+
+    }
+
+    .frase-card{
+
+        padding:30px 25px;
+
+    }
+
+    .frase-card p{
+
+        font-size:18px;
+
+    }
+
+    .evento-card{
+
+        padding:28px 22px;
+
+    }
+
+    .modal-contenido{
+
+        padding:25px;
+
+    }
+
+}

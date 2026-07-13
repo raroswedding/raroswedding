@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>R & R | 24.09.2027</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- ==========================
+     PORTADA
+========================== -->
+
+<section class="hero">
+
+    <div class="hero-overlay">
+
+        <div class="logo">
+            R & R
+        </div>
+
+        <h1>Raquel & Roberto</h1>
+
+        <p class="fecha">
+            24 · SEPTIEMBRE · 2027
+        </p>
+
+        <div class="scroll-indicator">
+            <span>Desliza</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     CUENTA ATRÁS
+========================== -->
+
+<section class="contador">
+
+    <div class="contenedor">
+
+        <h2>Faltan...</h2>
+
+        <div id="countdown">
+
+            <div>
+                <span id="dias">0</span>
+                <small>Días</small>
+            </div>
+
+            <div>
+                <span id="horas">0</span>
+                <small>Horas</small>
+            </div>
+
+            <div>
+                <span id="minutos">0</span>
+                <small>Minutos</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     FRASES
+========================== -->
+
+<section class="frases">
+
+    <div class="contenedor">
+
+        <h2>Unas cuantas cosas que deberías saber...</h2>
+
+        <div class="frase-card">
+            <p><strong>Spoiler:</strong> finalmente nos casamos.</p>
+        </div>
+
+        <div class="frase-card">
+            <p>La excusa perfecta para juntarnos todos.</p>
+        </div>
+
+        <div class="frase-card">
+            <p>Prometemos que habrá barra libre... 🍸</p>
+        </div>
+
+        <div class="frase-card gatos">
+
+            <div class="gatos-iconos">
+                🐈 🐈 🐈
+            </div>
+
+            <p>
+
+                <strong>Miami, Wairon y Ewi</strong>
+
+                <br><br>
+
+                aprueban esta unión.
+
+            </p>
+
+          
+
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     EL GRAN DÍA
+========================== -->
+
+<section class="evento">
+
+    <div class="contenedor">
+
+        <h2>El gran día</h2>
+
+        <div class="evento-card">
+
+            <h3>📅 Fecha</h3>
+
+            <p>24 de septiembre de 2027</p>
+
+        </div>
+
+        <div class="evento-card">
+
+            <h3>🕓 Hora</h3>
+
+            <p>Próximamente...</p>
+
+        </div>
+
+        <div class="evento-card">
+
+            <h3>📍 Lugar</h3>
+
+            <p>Finca · Próximamente...</p>
+
+    
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     RSVP
+========================== -->
+
+<section class="rsvp">
+
+    <div class="contenedor">
+
+        <h2>Confirma tu asistencia</h2>
+
+        <p>
+
+            Nos ayudará mucho que confirmes antes de la fecha límite.
+
+        </p>
+
+        <button id="abrirFormulario" class="boton-rsvp">
+
+            Confirmar asistencia
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ==========================
+     FOOTER
+========================== -->
+
+<footer>
+
+    <div class="logo-footer">
+
+        R & R
+
+    </div>
+
+    <p>
+
+        Gracias por formar parte de un día tan importante para nosotros.
+
+    </p>
+
+</footer>
+
+<!-- ==========================
+     FORMULARIO
+========================== -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-contenido">
+
+        <button id="cerrarModal" class="cerrar">&times;</button>
+
+        <h2>Confirma tu asistencia</h2>
+
+        <form action="https://formspree.io/f/xojgqwnn" method="POST">
+
+            <label>¿Quién eres? 👀</label>
+            <input type="text" name="Nombre" required>
+
+            <label>¿Vendrás?</label>
+            <select name="Asistencia" required>
+                <option value="">Selecciona una opción</option>
+                <option>Sí</option>
+                <option>No</option>
+            </select>
+
+            <label>¿Vendrás con acompañante?</label>
+            <select id="acompanante" name="Acompañante">
+                <option>No</option>
+                <option>Sí</option>
+            </select>
+
+            <div id="nombreAcompanante" style="display:none;">
+                <label>Nombre del acompañante</label>
+                <input type="text" name="Nombre acompañante">
+            </div>
+
+            <label>¿Vendrán niños?</label>
+            <select id="ninos" name="Niños">
+                <option>No</option>
+                <option>Sí</option>
+            </select>
+
+            <div id="cantidadNinos" style="display:none;">
+                <label>¿Cuántos?</label>
+                <input type="number" name="Cantidad niños" min="1">
+            </div>
+
+            <label>¿Alguna alergia o intolerancia?</label>
+            <textarea name="Alergias"></textarea>
+
+            <label>🎵 ¿Qué canción no puede faltar en la fiesta?</label>
+            <input type="text" name="Cancion">
+
+            <label>😂 ¿Qué canción NO quieres escuchar?</label>
+            <input type="text" name="Cancion prohibida">
+
+            <label>💌 ¿Quieres decirnos algo?</label>
+            <textarea name="Mensaje"></textarea>
+
+            <button type="submit" class="boton-rsvp">
+
+                Enviar confirmación
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
