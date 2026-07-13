@@ -81,11 +81,21 @@ section{
 
     font-family:'Cormorant Garamond',serif;
 
-    letter-spacing:10px;
+    font-size:58px;
 
-    font-size:20px;
+    letter-spacing:18px;
 
-    margin-bottom:35px;
+    color:#3A3836;
+
+    position:absolute;
+
+    top:55px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    z-index:20;
 
 }
 
