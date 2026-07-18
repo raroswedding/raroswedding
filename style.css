@@ -365,15 +365,17 @@ h2{
 }
 .evento-item{
 
-    display:flex;
+    display:grid;
+
+    grid-template-columns:70px 1fr;
 
     align-items:center;
 
     gap:25px;
 
-    padding:18px 0;
+    padding:28px 0;
 
-    border-bottom:1px solid #ece7df;
+    border-bottom:1px solid #e8e2d8;
 
 }
 
@@ -385,11 +387,19 @@ h2{
 
 .icono{
 
-    font-size:32px;
+    font-size:38px;
 
-    width:50px;
+    width:70px;
 
     text-align:center;
+
+}
+
+.evento-item div{
+
+    display:flex;
+
+    flex-direction:column;
 
 }
 
@@ -399,17 +409,21 @@ h2{
 
     font-family:'Cormorant Garamond',serif;
 
-    font-size:30px;
+    font-size:34px;
 
     color:#70755E;
+
+    line-height:1.1;
 
 }
 
 .evento-item p{
 
-    margin-top:5px;
+    margin-top:10px;
 
     color:#666;
+
+    font-size:24px;
 
 }
 /* ===================================================
