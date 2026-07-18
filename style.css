@@ -363,6 +363,55 @@ h2{
     color:#555;
 
 }
+.evento-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #ece7df;
+
+}
+
+.evento-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.icono{
+
+    font-size:32px;
+
+    width:50px;
+
+    text-align:center;
+
+}
+
+.evento-item h3{
+
+    margin:0;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    color:#70755E;
+
+}
+
+.evento-item p{
+
+    margin-top:5px;
+
+    color:#666;
+
+}
 /* ===================================================
    PRÓXIMAMENTE
 =================================================== */
