@@ -638,7 +638,59 @@ footer p{
 
 }
 
+/* ===================================================
+   FINCA
+=================================================== */
 
+.finca{
+    background:#F8F5F1;
+    text-align:center;
+}
+
+.finca-texto{
+
+    max-width:900px;
+    margin:0 auto 50px;
+    font-size:22px;
+    line-height:1.8;
+    color:#555;
+
+}
+
+.foto-finca{
+
+    width:100%;
+    max-width:950px;
+
+    margin:50px auto;
+
+    border-radius:25px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.15);
+
+    transition:.4s;
+
+}
+
+.foto-finca:hover{
+
+    transform:scale(1.02);
+
+}
+
+.finca-frase{
+
+    max-width:800px;
+
+    margin:30px auto;
+
+    font-size:20px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
 /* ===================================================
    RESPONSIVE
 =================================================== */
